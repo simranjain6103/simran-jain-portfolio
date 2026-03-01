@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simran Jain | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f9fafb; color: #0f172a; line-height: 1.7; }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0px 30px 60px 30px;
+    }
+
+    /* NAVIGATION */
+    nav {
+    
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 60px;
+    }
+    nav h3 { font-weight: 600; letter-spacing: 0.5px; }
+    nav ul { list-style: none; display: flex; gap: 35px; }
+    nav a { text-decoration: none; color: #475569; font-weight: 500; font-size: 15px; }
+    nav a:hover { color: #3191d5; }
+
+    /* HERO */
+    .hero {
+      padding: 60px 0 80px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 80vh;
+    }
+    .hero h1 { font-size: 54px; font-weight: 700; letter-spacing: -1px; }
+    .hero h2 { font-size: 22px; font-weight: 400; color: #475569; margin-top: 15px; }
+    .hero p {
+      margin-top: 30px;
+      max-width: 720px;
+      color: #475569;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-group {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 10px;
+      transition: all 0.25s ease;
+      border: 1px solid #3191d5;
+      font-size: 15px;
+    }
+    .primary { background: #3191d5; color: white; }
+    .primary:hover { background: #277bb5; }
+    .outline { color: #3191d5; background: transparent; }
+    .outline:hover { background: #eff6ff; }
+
+    /* SECTIONS */
+    section { margin-top: 140px; }
+    h3.section-title {
+      font-size: 30px;
+      margin-bottom: 45px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 35px;
+      transition: all 0.25s ease;
+    }
+    .card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; }
+
+    ul { padding-left: 22px; margin-top: 15px; }
+    li { margin-bottom: 10px; color: #475569; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; font-weight: 500; }
+
+    footer {
+      margin-top: 180px;
+      padding: 50px 0 20px 0;
+      text-align: center;
+      color: #64748b;
+      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    .highlight { color: #3191d5; font-weight: 600; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 40px; }
+      section { margin-top: 100px; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- NAVBAR -->
+    <nav>
+      <h3>Simran Jain</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <h1>Simran Jain</h1>
+      <h2>Aspiring Data Analyst | Business Intelligence & Analytics</h2>
+      <p>
+        Analytical and detail-oriented Data Analytics student with strong expertise in SQL, Python, Excel, and Power BI.
+        Passionate about transforming complex datasets into strategic insights that support data-driven business decisions.
+      </p>
+      <div class="btn-group">
+        <a href="SimranResume.pdf" download class="btn primary">Download Resume</a>
+        <a href="#contact" class="btn outline">Contact</a>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h3 class="section-title">Professional Summary</h3>
+      <div class="card">
+        <p>
+          Strong foundation in data analysis, statistical concepts, and business reporting.
+          Experienced in performing exploratory data analysis, data cleaning, and building dashboards.
+          Adept at writing optimized SQL queries and delivering insights tailored to stakeholder needs.
+        </p>
+        <ul>
+          <li>Proficient in data cleaning & transformation</li>
+          <li>Experience with KPI tracking & reporting</li>
+          <li>Basic knowledge of data warehousing concepts</li>
+          <li>Understanding of business problem-solving frameworks</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h3 class="section-title">Technical Skills</h3>
+      <div class="card skills-grid">
+        <div>Python (Pandas, NumPy, Matplotlib)</div>
+        <div>SQL (Joins, CTEs, Window Functions)</div>
+        <div>Advanced Excel (Pivot Tables, Power Query)</div>
+        <div>Power BI (DAX, Data Modeling)</div>
+        <div>Statistical Analysis & Hypothesis Testing</div>
+        <div>Data Visualization & Reporting</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h3 class="section-title">Key Projects</h3>
+      <div class="grid">
+
+        <div class="card">
+           <h4>Sales & Revenue Analysis Project</h4>
+          <p>Comprehensive end-to-end sales data analysis project focusing on revenue optimization and product performance insights.</p>
+          <ul>
+            <li>Analyzed <strong>10,000+ transaction records</strong> to identify revenue trends and product performance patterns</li>
+            <li>Cleaned raw sales data by handling null values and duplicates using <strong>Python (Pandas)</strong></li>
+            <li>Used <strong>SQL queries</strong> to calculate total revenue, monthly growth rate, and top-performing products</li>
+            <li>Identified top <strong>20% products contributing 35% of overall revenue</strong></li>
+            <li>Created interactive <strong>Excel dashboard</strong> to visualize KPIs and support business decisions</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Customer Retention & Order Analysis (SQL)</h4>
+          <p>Database-driven analytical project focused on customer behavior, retention metrics, and revenue contribution analysis.</p>
+          <ul>
+            <li>Designed customer-order relational database schema in <strong>MySQL</strong></li>
+            <li>Calculated <strong>Average Order Value (AOV)</strong>, Customer Lifetime Value (CLV), and repeat purchase rate</li>
+            <li>Used <strong>GROUP BY</strong> and <strong>HAVING</strong> clauses to identify customers ordering above average</li>
+            <li>Found that high-value customers contributed nearly <strong>40% of total revenue</strong></li>
+            <li>Simulated business insights to improve customer retention strategies</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3 class="section-title">Contact Information</h3>
+      <div class="card">
+        <p><strong>Email:</strong> simranjain6103@email.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/simranjain6103</p>
+        <p><strong>GitHub:</strong> github.com/simranjain6103</p>
+        <p><strong>Location:</strong> India</p>
+        <p class="highlight">Open to entry-level Data Analyst roles.</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Simran Jain | Data Analyst Portfolio
+    </footer>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
