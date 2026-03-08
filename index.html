@@ -174,6 +174,41 @@ margin-bottom:8px;
 color:#475569;
 }
 
+.analytics-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.analytics-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:420px;
+}
+
+.analytics-card img{
+width:100%;
+border-radius:8px;
+margin-top:10px;
+}
+
+.analytics-card ul{
+margin:10px 0;
+padding-left:18px;
+}
+
+.analytics-card .btn{
+margin-top:auto;
+}
+
 /* TOOLS */
 
 .tools{
@@ -391,118 +426,91 @@ visualizing insights for business decision making.
 
 <section id="analytics">
 
-<h3 class="section-title">Data Analytics Dashboards</h3>
+<h3 class="section-title">Dashboards & Data Analysis</h3>
 
-<div class="grid">
+<div class="analytics-grid">
 
-<!-- BLINKIT DASHBOARD -->
-
-<div class="card">
-
-<h4>Blinkit Sales Analysis Dashboard</h4>
-
-<div class="tools">
-<span>Power BI</span>
-<span>DAX</span>
-<span>Data Visualization</span>
-</div>
+<div class="analytics-card">
+<h4>Power BI Sales Dashboard</h4>
 
 <p>
-Built an interactive Power BI dashboard analyzing Blinkit outlet performance,
-sales trends, and product categories.
+Interactive dashboard to monitor sales KPIs, revenue trends,
+and product performance across regions using Power BI visuals.
 </p>
 
 <ul>
-<li>Analyzed $1.2M+ total sales</li>
-<li>Created KPIs for average sales and rating</li>
-<li>Used slicers for outlet location and item types</li>
-<li>Identified top performing outlet tiers</li>
+<li>Created KPI cards using DAX</li>
+<li>Revenue and sales trend analysis</li>
+<li>Interactive filters and slicers</li>
+<li>Regional performance insights</li>
 </ul>
 
-<img src="blinkit-dashboard.png">
+<img src="images/blinkit-dashboard.png" alt="Power BI Dashboard">
 
+<a href="#" class="btn outline">View Project</a>
 </div>
 
 
-<!-- YOUTUBE DASHBOARD -->
-
-<div class="card">
-
-<h4>Top UK YouTubers 2024 Dashboard</h4>
-
-<div class="tools">
-<span>Power BI</span>
-<span>DAX</span>
-<span>Data Modeling</span>
-</div>
+<div class="analytics-card">
+<h4>SQL Customer Analysis</h4>
 
 <p>
-Power BI dashboard analyzing top UK YouTube channels by views,
-subscribers and engagement metrics.
+SQL analytics project focused on identifying purchasing patterns
+and high value customers from transaction datasets.
 </p>
 
 <ul>
-<li>Analyzed subscriber growth and views</li>
-<li>Built engagement ratio metrics</li>
-<li>Visualized top creators by views</li>
-<li>Compared channel performance</li>
+<li>JOIN and GROUP BY analysis</li>
+<li>Customer segmentation queries</li>
+<li>Average order value calculation</li>
+<li>Top performing customers</li>
 </ul>
 
-<img src="youtube-dashboard.png">
+<img src="images/sql-analysis.png" alt="SQL Analysis">
 
+<a href="#" class="btn outline">View Queries</a>
 </div>
 
 
-<!-- Sales Executive Performance Dashboard -->
-
-<div class="card">
-  <h4>Sales Executive Performance Dashboard</h4>
-  <div class="tools">
-    <span>Excel</span>
-    <span>Slicers</span>
-    <span>Pivot Charts</span>
-    <span>KPI Tracking</span>
-  </div>
-  <p>
-    Developed a multi-tab interactive performance tracker for sales teams 
-    across 8 major Indian cities including Mumbai, Delhi, and Pune.
-  </p>
-  <ul>
-    <li>Built 4 synchronized dashboards tracking Sales, Target Hits, and Gap Analysis</li>
-    <li>Implemented city-wise slicers for real-time regional performance filtering</li>
-    <li>Visualized sales distribution using Radar (Line) and Pie charts for executive review</li>
-    <li>Automated "Grand Total" calculations for Target Hit percentages and volume</li>
-  </ul>
-  <img src="Sales.png">
-</div>
-
-
-<!-- SQL ANALYSIS -->
-
-<div class="card">
-
-<h4>SQL Data Cleaning & Analysis</h4>
-
-<div class="tools">
-<span>SQL</span>
-<span>Data Cleaning</span>
-<span>Query Optimization</span>
-</div>
+<div class="analytics-card">
+<h4>Retail Data Insights</h4>
 
 <p>
-SQL project analyzing YouTube dataset using advanced queries
-for data transformation and reporting.
+Data exploration project analyzing retail store transactions
+to understand product demand and customer behavior.
 </p>
 
 <ul>
-<li>Used SUBSTRING and CHARINDEX for cleaning</li>
-<li>Extracted channel names from raw dataset</li>
-<li>Analyzed subscribers, views and video counts</li>
-<li>Prepared dataset for dashboard analysis</li>
+<li>Sales trend visualization</li>
+<li>Customer purchase patterns</li>
+<li>Product category performance</li>
+<li>Monthly revenue insights</li>
 </ul>
 
-<img src="sql-analysis.png">
+<img src="images/Sales.png" alt="Retail Analysis">
 
+<a href="#" class="btn outline">View Analysis</a>
+</div>
+
+
+<div class="analytics-card">
+<h4>Marketing Campaign Dashboard</h4>
+
+<p>
+Dashboard to evaluate marketing campaign performance and
+conversion metrics using interactive visual reports.
+</p>
+
+<ul>
+<li>Campaign ROI tracking</li>
+<li>Lead conversion analysis</li>
+<li>Traffic source comparison</li>
+<li>Marketing performance KPIs</li>
+</ul>
+
+<img src="images/youtube-dashboard.png" alt="Marketing Dashboard">
+
+<a href="#" class="btn outline">View Dashboard</a>
 </div>
 
 </div>
