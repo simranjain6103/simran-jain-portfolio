@@ -1,278 +1,17 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Simran Jain | Data Analyst Portfolio</title>
 
+<link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-}
-
-body{
-background:#f9fafb;
-color:#0f172a;
-line-height:1.7;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:0 30px 60px;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-border-bottom:1px solid #e5e7eb;
-margin-bottom:60px;
-}
-
-nav ul{
-list-style:none;
-display:flex;
-gap:30px;
-}
-
-nav a{
-text-decoration:none;
-color:#475569;
-font-weight:500;
-}
-
-nav a:hover{
-color:#3191d5;
-}
-
-.menu-toggle{
-display:none;
-font-size:26px;
-cursor:pointer;
-}
-
-/* HERO */
-
-.hero{
-text-align:center;
-padding:60px 0 80px;
-}
-
-.hero h1{
-font-size:54px;
-}
-
-.hero h2{
-font-weight:400;
-color:#475569;
-margin-top:10px;
-}
-
-.hero p{
-max-width:700px;
-margin:25px auto;
-color:#475569;
-}
-
-.btn{
-padding:12px 28px;
-border-radius:6px;
-border:1px solid #3191d5;
-text-decoration:none;
-font-weight:500;
-margin:10px;
-display:inline-block;
-}
-
-.primary{
-background:#3191d5;
-color:white;
-}
-
-.outline{
-color:#3191d5;
-}
-
-.outline:hover{
-background:#eff6ff;
-}
-
-/* STATS */
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-margin-top:60px;
-}
-
-.stat-box{
-background:white;
-padding:30px;
-text-align:center;
-border-radius:10px;
-border:1px solid #e5e7eb;
-}
-
-.stat-box h2{
-color:#3191d5;
-font-size:34px;
-}
-
-/* SECTIONS */
-
-section{
-margin-top:120px;
-}
-
-.section-title{
-font-size:28px;
-margin-bottom:40px;
-}
-
-/* CARD */
-
-.card{
-background:white;
-padding:35px;
-border-radius:12px;
-border:1px solid #e5e7eb;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-ul{
-margin-top:10px;
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
-color:#475569;
-}
-
-.analytics-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.analytics-card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-
-min-height:420px;
-}
-
-.analytics-card img{
-width:100%;
-border-radius:8px;
-margin-top:10px;
-}
-
-.analytics-card ul{
-margin:10px 0;
-padding-left:18px;
-}
-
-.analytics-card .btn{
-margin-top:auto;
-}
-
-/* TOOLS */
-
-.tools{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-margin:12px 0;
-}
-
-.tools span{
-background:#eef6ff;
-color:#3191d5;
-padding:5px 12px;
-border-radius:20px;
-font-size:13px;
-}
-
-.card img{
-width:100%;
-margin-top:15px;
-border-radius:8px;
-border:1px solid #e5e7eb;
-}
-
-/* FOOTER */
-
-footer{
-margin-top:150px;
-padding-top:40px;
-text-align:center;
-border-top:1px solid #e5e7eb;
-color:#64748b;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-nav{
-flex-direction:column;
-gap:15px;
-}
-
-nav ul{
-display:none;
-flex-direction:column;
-text-align:center;
-}
-
-nav ul.active{
-display:flex;
-}
-
-.menu-toggle{
-display:block;
-}
-
-.hero h1{
-font-size:36px;
-}
-
-}
-
-</style>
 </head>
 
 <body>
@@ -286,6 +25,7 @@ font-size:36px;
 <h3>Simran Jain</h3>
 
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
 
 <ul id="menu">
 <li><a href="#about">About</a></li>
@@ -323,7 +63,7 @@ that support data-driven decision making.
 <div class="stats">
 
 <div class="stat-box">
-<h2>3+</h2>
+<h2>4+</h2>
 <p>Data Projects</p>
 </div>
 
@@ -338,8 +78,40 @@ that support data-driven decision making.
 </div>
 
 <div class="stat-box">
-<h2>2+</h2>
+<h2>4+</h2>
 <p>Dashboards Built</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+
+<section id="highlights">
+
+<h3 class="section-title">Key Highlights</h3>
+
+<div class="grid">
+
+<div class="card">
+<h4>Data Analysis Projects</h4>
+<p>Completed multiple end-to-end analytics projects including data cleaning, exploration and dashboard creation.</p>
+</div>
+
+<div class="card">
+<h4>Business Intelligence</h4>
+<p>Designed dashboards using Power BI and Excel to visualize KPIs and business performance insights.</p>
+</div>
+
+<div class="card">
+<h4>SQL Data Analysis</h4>
+<p>Used SQL joins, aggregations and filtering techniques to explore structured datasets.</p>
+</div>
+
+<div class="card">
+<h4>Data Visualization</h4>
+<p>Built clear visual reports and dashboards for communicating insights effectively.</p>
 </div>
 
 </div>
@@ -355,10 +127,9 @@ that support data-driven decision making.
 <div class="card">
 
 <p>
-Strong foundation in data analysis, SQL querying, dashboard building
-and statistical analysis.
-Experienced in data cleaning, exploratory analysis and
-visualizing insights for business decision making.
+Strong foundation in SQL querying, Excel analytics and Power BI dashboards.
+Experienced in data cleaning, exploratory analysis and visualization to
+generate insights that support business decisions.
 </p>
 
 </div>
@@ -388,32 +159,99 @@ visualizing insights for business decision making.
 
 <section id="projects">
 
-<h3 class="section-title">Key Projects</h3>
+<h3 class="section-title">Data Analytics Projects</h3>
 
-<div class="grid">
+<div class="projects-grid">
 
-<div class="card">
+<div class="project-card">
 
-<h4>Sales & Revenue Analysis</h4>
+<h4>Blinkit Sales Data Analysis</h4>
+
+<div class="tools">
+<span>SQL</span>
+<span>Power BI</span>
+<span>DAX</span>
+</div>
+
+<p>
+Exploratory analysis of Blinkit retail sales dataset to identify
+key revenue drivers and product performance insights.
+</p>
 
 <ul>
-<li>Analyzed 10,000+ sales records</li>
-<li>Performed data cleaning using Python</li>
-<li>Used SQL for revenue calculations</li>
-<li>Built Excel KPI dashboard</li>
+<li>Cleaned raw sales dataset</li>
+<li>Analyzed outlet performance</li>
+<li>Calculated sales KPIs</li>
+<li>Prepared data for dashboard visualization</li>
 </ul>
 
 </div>
 
-<div class="card">
+<div class="project-card">
 
-<h4>Customer Retention Analysis</h4>
+<h4>UK YouTube Channel Analysis</h4>
+
+<div class="tools">
+<span>SQL</span>
+<span>Data Cleaning</span>
+</div>
+
+<p>
+Analyzed top UK YouTube channel dataset to evaluate subscriber
+growth and content performance trends.
+</p>
 
 <ul>
-<li>Analyzed repeat customers</li>
-<li>Calculated Customer Lifetime Value</li>
-<li>Used GROUP BY and HAVING queries</li>
-<li>Generated retention insights</li>
+<li>Cleaned dataset using SQL</li>
+<li>Extracted channel metrics</li>
+<li>Compared views and subscribers</li>
+<li>Identified top performing creators</li>
+</ul>
+
+</div>
+
+<div class="project-card">
+
+<h4>Sales Executive Analysis</h4>
+
+<div class="tools">
+<span>Excel</span>
+<span>Pivot Tables</span>
+</div>
+
+<p>
+Evaluated executive sales performance across multiple cities
+using structured Excel analysis.
+</p>
+
+<ul>
+<li>Tracked sales targets</li>
+<li>Compared city performance</li>
+<li>Calculated KPIs</li>
+<li>Prepared dashboard dataset</li>
+</ul>
+
+</div>
+
+<div class="project-card">
+
+<h4>Retail Sales Trend Analysis</h4>
+
+<div class="tools">
+<span>Excel</span>
+<span>Trend Analysis</span>
+</div>
+
+<p>
+Explored historical retail data to identify seasonal trends
+and top selling product categories.
+</p>
+
+<ul>
+<li>Analyzed monthly revenue</li>
+<li>Studied product demand</li>
+<li>Identified best sellers</li>
+<li>Generated business insights</li>
 </ul>
 
 </div>
@@ -426,91 +264,48 @@ visualizing insights for business decision making.
 
 <section id="analytics">
 
-<h3 class="section-title">Dashboards & Data Analysis</h3>
+<h3 class="section-title">Dashboard Visualizations</h3>
 
 <div class="analytics-grid">
 
 <div class="analytics-card">
+
 <h4>Power BI Sales Dashboard</h4>
 
-<p>
-Interactive dashboard to monitor sales KPIs, revenue trends,
-and product performance across regions using Power BI visuals.
-</p>
-
-<ul>
-<li>Created KPI cards using DAX</li>
-<li>Revenue and sales trend analysis</li>
-<li>Interactive filters and slicers</li>
-<li>Regional performance insights</li>
-</ul>
+<p>Interactive Power BI dashboard visualizing retail sales performance and revenue trends.</p>
 
 <img src="images/blinkit-dashboard.png" alt="Power BI Dashboard">
 
-<a href="#" class="btn outline">View Project</a>
 </div>
 
-
 <div class="analytics-card">
+
 <h4>SQL Customer Analysis</h4>
 
-<p>
-SQL analytics project focused on identifying purchasing patterns
-and high value customers from transaction datasets.
-</p>
-
-<ul>
-<li>JOIN and GROUP BY analysis</li>
-<li>Customer segmentation queries</li>
-<li>Average order value calculation</li>
-<li>Top performing customers</li>
-</ul>
+<p>SQL analysis of customer purchasing patterns and revenue contribution.</p>
 
 <img src="images/sql-analysis.png" alt="SQL Analysis">
 
-<a href="#" class="btn outline">View Queries</a>
 </div>
 
-
 <div class="analytics-card">
-<h4>Retail Data Insights</h4>
 
-<p>
-Data exploration project analyzing retail store transactions
-to understand product demand and customer behavior.
-</p>
+<h4>Sales Performance Dashboard</h4>
 
-<ul>
-<li>Sales trend visualization</li>
-<li>Customer purchase patterns</li>
-<li>Product category performance</li>
-<li>Monthly revenue insights</li>
-</ul>
+<p>Excel dashboard tracking sales executive performance and targets.</p>
 
-<img src="images/Sales.png" alt="Retail Analysis">
+<img src="images/Sales.png" alt="Sales Dashboard">
 
-<a href="#" class="btn outline">View Analysis</a>
 </div>
 
-
 <div class="analytics-card">
-<h4>Marketing Campaign Dashboard</h4>
 
-<p>
-Dashboard to evaluate marketing campaign performance and
-conversion metrics using interactive visual reports.
-</p>
+<h4>Marketing Dashboard</h4>
 
-<ul>
-<li>Campaign ROI tracking</li>
-<li>Lead conversion analysis</li>
-<li>Traffic source comparison</li>
-<li>Marketing performance KPIs</li>
-</ul>
+<p>Dashboard visualizing marketing campaign performance and engagement trends.</p>
 
 <img src="images/youtube-dashboard.png" alt="Marketing Dashboard">
 
-<a href="#" class="btn outline">View Dashboard</a>
 </div>
 
 </div>
@@ -548,17 +343,11 @@ function toggleMenu(){
 document.getElementById("menu").classList.toggle("active");
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-anchor.addEventListener('click',function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior:'smooth'
-});
-});
-});
+function toggleDarkMode(){
+document.body.classList.toggle("dark");
+}
 
 </script>
 
 </body>
 </html>
-```
